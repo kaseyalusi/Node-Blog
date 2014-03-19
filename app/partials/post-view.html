@@ -1,0 +1,11 @@
+<div id="recent" class="container-fluid">
+  <div class="row-fluid">
+  <h1>{{post.title}}</h1>
+  <h4><span ng-repeat="auth in post.authors">{{auth}}</span></h4>
+  <p ng-repeat="para in  post.paragraphs">
+    <span ng-click="open()">
+      {{para}}
+    </span>
+  </p>
+  </div>
+</div>

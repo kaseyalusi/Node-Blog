@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<form>
+		<div class="form-group">
+
+			<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+			<input type="text" class="form-control input-lg text-center" placeholder="Title" ng-model="formData.title">
+			<input type="text" class="form-control input-lg text-center" placeholder="author" ng-model="formData.author">
+			<input type="text" class="form-control input-lg text-center" placeholder="TLDR" ng-model="formData.tldr">
+			<textarea class="form-control input-lg text-center" placeholder="Body" ng-model="formData.paragraphs"></textarea>
+			<input type="text" class="form-control input-lg text-center" placeholder="Tags,Tag" ng-model="formData.tags">
+		</div>
+
+		<!-- createToDo() WILL CREATE NEW TODOS -->
+		<button type="submit" class="btn btn-primary btn-lg" ng-click="createPost()">Add</button>
+	</form>
+	{{inserted}}
+</div>
